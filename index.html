@@ -102,13 +102,13 @@
             <h5>(*) Khách hàng vui lòng kiểm tra đối chiếu kỹ nhu cầu sử dụng với support của từng loại VPS</h5>
           </div>
         </li>
-        <li>
+<!--         <li>
           <div class="slide3">
             <p class="pull-left"><img src="images/server2.png" alt="server" class="img-responsive"></p>
             <h1>Support nhiệt tình</h1>
             <h3>Cái này chém đấy</h3>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -150,8 +150,8 @@
 
   <div class="row PageHead">
     <div class="col-md-12">
-      <h1>Tính năng khác</h1>
-      <h3>You will get lot of features with flathost</h3>
+      <!-- <h1>Tính năng khác</h1> -->
+      <!-- <h3>You will get lot of features with flathost</h3> -->
     </div>
   </div>
   <div class="row">
@@ -177,7 +177,7 @@
   <div class="row">
     <div class="col-sm-6 features"> <img src="images/cpanel_icon.png" alt="icon" class="img-responsive">
       <h4>Cấu hình tùy chỉnh</h4>
-      <p>Liên hệ trực tiếp với chúng tôi để có thể được hỗ trợ tạo VPS với cấu hình riêng phù hợp nhu cầu sử dụng nhất</p>
+      <p><a href="#contact">Liên hệ</a> trực tiếp với chúng tôi để có thể được hỗ trợ tạo VPS với cấu hình riêng phù hợp nhu cầu sử dụng nhất</p>
     </div>
     <div class="col-sm-6 features"> <img src="images/php_icon.png" alt="icon" class="img-responsive">
       <h4>Latest PHP &amp; MySQL</h4>
@@ -245,7 +245,7 @@
   <div class="row PageHead" id="pricing">
     <div class="col-md-12">
       <h1>Giá bán</h1>
-      <h3>Liên hệ riêng để lấy cấu hình mong muốn (chúng tôi có sẵn dầu ăn)</h3>
+      <h3><a href="#contact">Liên hệ</a> để lấy cấu hình mong muốn</h3>
     </div>
   </div>
   <div class="row">
@@ -493,39 +493,49 @@
 <div class="container" id="contact">
   <div class="row PageHead">
     <div class="col-md-12">
-      <h1>Contact Us</h1>
-      <h3>Keep in touch with us. we are here to help you</h3>
+      <h1>Liên hệ</h1>
+      <h3>Vui lòng kiểm tra kỹ hoặc gọi điện trực tiếp để tránh scam</h3>
     </div>
   </div>
   <div class="row ContactUs">
     <div class="col-md-6">
       <div class="row">
-        <div class="col-sm-6">
-          <h4> Australia </h4>
+        <div class="col-sm-4">
+          <h4> Supporter 1 </h4>
           <address>
-          <strong>Flat Host Pty Ltd</strong><br>
-          13/2 Elizabeth Street<br>
-          Melbourne VIC 30007<br>
-          Australia<br>
-          <abbr title="Phone">P:</abbr> +61 3 8376 6284<br>
-          <br>
+              mmo4vn: crocodile<br>
+              Skype: support.bcd<br>
+              ICQ: 703193609<br>
+              <br>
           </address>
         </div>
-        <div class="col-sm-6">
-          <h4>India</h4>
+        <div class="col-sm-4">
+          <h4> Supporter 2 </h4>
           <address>
-          <strong>Flat Host Pty Ltd</strong><br>
-          MG Road<br>
-          Pulleppady Jn<br>
-          Kochi, India<br>
-          <abbr title="Phone">P:</abbr>+91 9 8376 6280<br>
-          <br>
+              Skype: sp.bcd2<br>
+              ICQ: 719887502<br>
+              <br>
           </address>
         </div>
+        <div class="col-sm-4">
+          <h4> Supporter 3 </h4>
+          <address>
+              mmo4vn: xteen2701<br>
+              Skype: trinhtien.2701<br>
+              ICQ: 712621960<br>
+              <br>
+          </address>
+        </div>
+
       </div>
       <div class="row">
         <div class="col-md-12 mapwrap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3151.835837652496!2d144.955431!3d-37.817313999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedc33f230d1355b1!2sEnvato+Pty+Ltd!5e0!3m2!1sen!2sin!4v1408780745585" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+          <h4> Hot line </h4>
+          <address>
+            Mr. Hòa: 0941619917<br>
+            <a href="https://mmo4me.com/threads/vps-dedicated-us-ca-eu-vn-chuyen-auto-scan-ptu-offer-render-cpm-chinh-hang-da-dang-3-thang.289700/">Trực tiếp topic tại mmo4vn</a>
+            <br>
+          </address>
         </div>
       </div>
     </div>
@@ -653,20 +663,20 @@
 <!--==========ONE PAGE SCROLLING SCRIPTS STARTS===============-->
 
 <script>
-            $(function() {
-                $('.nav li a').bind('click',function(event){
-                    var $anchor2 = $(this).parent();
-                    var $anchor = $(this);
-                    $('.nav  li').removeClass('active');
-                    $anchor2.addClass('active');
+    $(function() {
+        $('.nav li a').bind('click',function(event){
+            var $anchor2 = $(this).parent();
+            var $anchor = $(this);
+            $('.nav  li').removeClass('active');
+            $anchor2.addClass('active');
 
-                    $('html, body').stop().animate({
-                        scrollTop: $($anchor.attr('href')).offset().top - 80
-                    }, 1500,'easeInOutExpo');
-                    event.preventDefault();
-                });
-            });
-        </script>
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 80
+            }, 1500,'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+</script>
 
 <!--=============ONE PAGE SCROLLING SCRIPTS ENDS============-->
 
@@ -694,7 +704,7 @@
 <!--=============BACK TO TOP ENDS============-->
 
 <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var $_Tawk_API={},$_Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -704,7 +714,7 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>
+</script> -->
 <!--End of Tawk.to Script-->
 
 </body>
