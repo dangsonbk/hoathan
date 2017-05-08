@@ -339,7 +339,7 @@ p {
 	background:#2cc76a;
 	padding:5px;
 	color:#FFF;
-	font-size:42px;
+	font-size:38px;
 	-webkit-border-radius:100%;
 	-moz-border-radius:100%;
 	border-radius:100%;
@@ -775,5 +775,5 @@ margin-bottom: -20px;
 /*Image fix for IE*/
 
 .img-responsive {
-	width:auto \9;	
+	width:auto \9;
 }
